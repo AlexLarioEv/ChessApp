@@ -1,7 +1,8 @@
+import { v4 as uuidv4 } from 'uuid';
+
 import { Board } from "./Board";
 import { Colors } from "./Colors"
 import { Figure } from "./Figures/Figure";
-import { v4 as uuidv4 } from 'uuid';
 
 export class Cell {
 

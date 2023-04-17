@@ -16,7 +16,7 @@ const BoardComponent: React.FC<IBordProps> = ({setBoard, board}) => {
 
         {board.cells.map((row, index) => ( 
                 <Fragment key={index}>
-                    {row.map(cell=>  <CellComponent x={cell.x} y={cell.y} color={cell.color}  figure={cell.figure} bord={cell.board}  avalible={cell.avalible} key={cell.id}/>)}
+                    {row.map(cell=>  <CellComponent cell={cell} key={cell.id}/>)}
                 </Fragment>)
             )
         }
